@@ -3,9 +3,9 @@ REPO=https://github.com/qmk/qmk_firmware.git
 
 if [ ! -d qmk_firmware ] ; then
     git clone --recurse-submodules ${REPO}
-    cp -r keyboards qmk_firmware
-    git clone $REPO
 fi
+
+cp -r keyboards qmk_firmware
 
 cd qmk_firmware
 
