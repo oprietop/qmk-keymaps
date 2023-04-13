@@ -193,7 +193,6 @@ void render_logo(void) {
 
 void render_status_secondary(void) {
   render_logo();
-  oled_on();
   oled_scroll_left(); // Turns on scrolling
 }
 void render_status_main(void) {
