@@ -96,9 +96,8 @@
 
 #ifdef OLED_ENABLE
 //#  define OLED_DISABLE_TIMEOUT
-#  define OLED_TIMEOUT 30000
 //#  define OLED_FONT_H "keyboards/crkbd/keymaps/oprietop/danger.c"
-#  define OLED_FONT_H "keyboards/crkbd/keymaps/oprietop/alps.c"
+//#  define OLED_FONT_H "keyboards/crkbd/keymaps/oprietop/alps.c"
 #endif
 
 /* Mouse Settings */

@@ -1,9 +1,11 @@
+//https://github.com/qmk/qmk_firmware/blob/master/docs/config_options.md
+
 #pragma once
 
 /* Select hand configuration */
 #define MASTER_LEFT
 
-//#define FORCE_NKRO
+#define FORCE_NKRO
 
 // Better latency
 //#define USB_POLLING_INTERVAL_MS 1
@@ -24,13 +26,13 @@
 #endif
 
 #ifdef RGBLIGHT_ENABLE
-#  undef RGBLED_NUM
-#  define RGBLED_NUM 20
-#  undef RGBLED_SPLIT
-#  define RGBLED_SPLIT {10, 10}
+//#  undef RGBLED_NUM
+//#  define RGBLED_NUM 10
+//#  undef RGBLED_SPLIT
+//#  define RGBLED_SPLIT {10, 10}
 #  define RGBLIGHT_HUE_STEP 8
 #  define RGBLIGHT_SAT_STEP 8
-//#  define RGBLIGHT_VAL_STEP 5
+#  define RGBLIGHT_VAL_STEP 8
 #  define RGBLIGHT_LIMIT_VAL 120
 #  define RGBLIGHT_ANIMATIONS
 #endif
@@ -96,11 +98,10 @@
 #endif // RGB_MATRIX_ENABLE
 
 #ifdef OLED_ENABLE
-//#  define OLED_DISABLE_TIMEOUT
 //#  define OLED_FONT_H "keyboards/crkbd/keymaps/oprietop/danger.c"
 //#  define OLED_FONT_H "keyboards/crkbd/keymaps/oprietop/alps.c"
 #  undef OLED_TIMEOUT
-#  define OLED_TIMEOUT 120000
+#  define OLED_TIMEOUT 60000
 #endif
 
 /* Mouse Settings */

@@ -17,14 +17,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 
+#ifdef CONSOLE_ENABLE
+void keyboard_post_init_user(void) {
+  // Customise these values to desired behaviour
+  debug_enable=true;
+  debug_matrix=true;
+  debug_keyboard=true;
+  debug_mouse=true;
+}
+#include "print.h"
+
+#endif
+
 #include "defines.h"
 
 #ifdef OLED_ENABLE
-#   include "oled.c"
+#include "oled.c"
 #endif
 
 #ifdef ENCODER_ENABLE
-#   include "encoder.c"
+#include "encoder.c"
 #endif
 
 #include "functions.c"

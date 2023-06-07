@@ -2,6 +2,7 @@
 EXTRAKEY_ENABLE    = yes # Audio control and System control(+450)
 NKRO_ENABLE        = yes
 MOUSEKEY_ENABLE    = yes
+WPM_ENABLE         = yes
 #UNICODE_ENABLE     = yes
 
 # Fancy Stuff
